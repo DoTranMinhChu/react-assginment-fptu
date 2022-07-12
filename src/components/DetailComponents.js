@@ -1,6 +1,6 @@
-import { Card , CardImg , CardBody , CardTitle , CardSubtitle ,CardText,Button} from 'reactstrap';
+import { Card, CardImg, CardBody, CardTitle, CardSubtitle, CardText } from 'reactstrap';
 
-export default function Detail({data}) {
+export default function Detail({ data }) {
     return (
         <Card>
             <CardImg
@@ -10,21 +10,19 @@ export default function Detail({data}) {
                 width="100%"
             />
             <CardBody>
-                <CardTitle tag="h5">
-                    {data.name}
-                </CardTitle>
                 <CardSubtitle
-                    className="mb-2 text-muted"
+                    className="mb-2 text-muted text-center  "
                     tag="h6"
                 >
-                     {data.category}
+                    {data.category}
                 </CardSubtitle>
-                <CardText>
-                   Price : {data.price}
+                <CardTitle tag="h5" className="text-center">
+                    {data.name}
+                </CardTitle>
+
+                <CardText className='text-center'>
+                    Price : {data.price}
                 </CardText>
-                <Button>
-                    Buy
-                </Button>
             </CardBody>
         </Card>
     )

@@ -1,9 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'font-awesome/css/font-awesome.css';
 import { useState } from 'react';
 import './App.css';
-import DashBoard from './components/DashboardComponent';
-import Header from './components/HeaderComponent';
-import Main from './components/MainComponents';
+import Home from './components/HomeComponent';
 import { BATH_SHOWER } from './shared/bath_shower';
 import { BEDDING } from './shared/bedding';
 import { LIGHTING } from './shared/lighting';
@@ -14,10 +13,7 @@ function App() {
   const [lighting] = useState(LIGHTING)
   return (
     <>
-    <Header/>
-    <DashBoard/>
-    <Main bathShower={bathShower} bedding={bedding} lighting={lighting}/>
-
+      <Home bathShower={bathShower} bedding={bedding} lighting={lighting}></Home>
     </>
   );
 }

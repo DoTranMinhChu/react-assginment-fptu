@@ -15,13 +15,13 @@ export default function DashBoard() {
                     className="me-auto"
                     navbar
                 >
-                    <NavItem>
+                    <NavItem className='ml-1'>
                         Lighting
                     </NavItem>
-                    <NavItem>
+                    <NavItem className='ml-1'>
                         Bedding
-                    </NavItem>
-                    <NavItem>
+                    </NavItem >
+                    <NavItem className='ml-1'>
                         Bath & Shower
                     </NavItem>
                 </Nav>

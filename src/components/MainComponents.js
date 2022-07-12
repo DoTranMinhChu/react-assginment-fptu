@@ -1,4 +1,4 @@
-import { Row, Col } from 'reactstrap';
+import { Row, Col, Container } from 'reactstrap';
 
 import { Router, Routes, Route } from 'react-router-dom';
 import Detail from './DetailComponents';
@@ -11,18 +11,21 @@ const Main = ({ bathShower, bedding, lighting }) => {
     return (
 
         <>
-            <Row xs="3">
-                <Col >
-                    <Detail data={firstBathShower} />
-                </Col>
-                <Col >
-                    <Detail data={firstBedding} />
-                </Col>
-                <Col >
-                    <Detail data={firstLighting} />
-                </Col>
-               
-            </Row>
+            <Container>
+                <Row md="3" sm="1" >
+                    <Col >
+                        <Detail data={firstBathShower} />
+                    </Col>
+                    <Col >
+                        <Detail data={firstBedding} />
+                    </Col>
+                    <Col >
+                        <Detail data={firstLighting} />
+                    </Col>
+
+                </Row>
+            </Container>
+
 
         </>
 
